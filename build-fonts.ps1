@@ -1,7 +1,7 @@
 Param (
     $CommitHash
 )
-New-Item -ItemType "folder" -Name "Iosevka"
+New-Item -ItemType "directory" -Name "Iosevka"
 Copy-Item "private-build-plans.toml" -Destination "Iosevka/private-build-plans.toml"
 Set-Location -Path "Iosevka"
 git init
@@ -18,4 +18,3 @@ foreach ($str in $items)
     Copy-Item -Path "dist/$str" -Destination "../$str" -Recurse
 }
 Set-Location -Path ".."
-Remove-Item -Recurse -Path "Iosevka"
