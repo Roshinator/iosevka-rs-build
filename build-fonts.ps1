@@ -7,6 +7,7 @@ Set-Location -Path "Iosevka"
 git init
 git remote add origin https://github.com/be5invis/iosevka
 git fetch --depth 1 origin $CommitHash
+git checkout FETCH_HEAD
 try {if(Get-Command npm){Write-Information "npm exists"}}
 catch {throw "npm not found"}
 npm install ttfautohint
