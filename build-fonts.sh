@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir Iosevka
 cp private-build-plans.toml Iosevka/private-build-plans.toml
 cd Iosevka
@@ -9,11 +10,11 @@ echo "Make sure NPM and TTFAutoHint are installed"
 npm install
 
 declare -a builtItems
-builtItems=("iosevka-rs" "iosevka-rs-slab" "iosevka-rs-mono" "iosevka-rs-mono-slab" "iosevka-rs-terminal" "iosevka-rs-terminal-slab")
+builtItems=(iosevka-rs iosevka-rs-slab iosevka-rs-mono iosevka-rs-mono-slab iosevka-rs-terminal iosevka-rs-terminal-slab)
 
 for str in ${builtItems[@]}; do
     npm run build -- contents::$str
     cp -r dist/$str ../$str
 done
 cd ..
-# rm -rf Iosevka
+rm -rf Iosevka
