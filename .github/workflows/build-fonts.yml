@@ -21,25 +21,21 @@ jobs:
         name: [iosevka-rs, iosevka-rs-slab, iosevka-rs-terminal, iosevka-rs-terminal-slab]
     
     steps:
-    - uses: actions/checkout@v2
     - uses: actions/checkout@v3
       with:
         repository: be5invis/Iosevka
         ref: ${{github.event.inputs.commit}}
-        path: iosevka
-        clean: false
+    - uses: actions/checkout@v2
+      with:
+        path: rs-build
+    - run: cp rs-build/private-build-plans.toml private-build-plans.toml
     - name: Use Node.js latest
       uses: actions/setup-node@v3
       with:
         cache: 'npm'
-        working-directory: iosevka
     - run: npm install
-      working-directory: iosevka
     - run: npm run build -- contents::${{matrix.name}}
-      working-directory: iosevka
     - run: zip dist/${{matrix.name}} dist/${{matrix.name}}
-      working-directory: iosevka
     - uses: actions/upload-artifact@v3.0.0
       with:
         path: dist/${{matrix.name}}.zip
-        working-directory: iosevka
