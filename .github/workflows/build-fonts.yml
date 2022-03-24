@@ -1,0 +1,40 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Build Fonts
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: 'Iosevka commit to use'     
+        required: true
+        type: string
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        name: [iosevka-rs, iosevka-rs-slab, iosevka-rs-terminal, iosevka-rs-terminal-slab]
+    
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+      with:
+        repository: be5invis/Iosevka
+        ref: ${{github.event.inputs.commit}}
+        path: iosevka
+    - run: cp private-build-plans.toml iosevka/private-build-plans.toml
+    - run: cd iosevka
+    - name: Use Node.js latest
+      uses: actions/setup-node@v2
+      with:
+        cache: 'npm'
+    - run: npm install
+    - run: npm run build -- contents::${{matrix.name}}
+    - run: cd dist
+    - run: zip ${{matrix.name}} ${{matrix.name}}
+    - uses: actions/upload-artifact@v3.0.0
