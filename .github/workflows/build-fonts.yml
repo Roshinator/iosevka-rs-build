@@ -26,6 +26,7 @@ jobs:
       with:
         repository: be5invis/Iosevka
         ref: ${{github.event.inputs.commit}}
+        path: .
     - name: Use Node.js latest
       uses: actions/setup-node@v3
       with:
