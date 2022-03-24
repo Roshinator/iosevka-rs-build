@@ -26,15 +26,13 @@ jobs:
       with:
         repository: be5invis/Iosevka
         ref: ${{github.event.inputs.commit}}
-        path: iosevka
-    - run: cp private-build-plans.toml iosevka/private-build-plans.toml
-    - run: cd iosevka
     - name: Use Node.js latest
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         cache: 'npm'
     - run: npm install
     - run: npm run build -- contents::${{matrix.name}}
-    - run: cd dist
-    - run: zip ${{matrix.name}} ${{matrix.name}}
+    - run: zip dist/${{matrix.name}} dist/${{matrix.name}}
     - uses: actions/upload-artifact@v3.0.0
+      with:
+        path: dist/${{matrix.name}}.zip
