@@ -33,6 +33,10 @@ jobs:
       uses: actions/setup-node@v3
       with:
         cache: 'npm'
+    - name: NPM or Yarn install with caching
+      uses: bahmutov/npm-install@v1.6.0
+      with:
+        install-command: ttfautohint
     - run: npm install
     - run: npm run build -- contents::${{matrix.name}}
     - run: zip dist/${{matrix.name}} dist/${{matrix.name}}
