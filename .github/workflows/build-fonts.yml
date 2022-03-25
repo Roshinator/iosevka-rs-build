@@ -43,5 +43,6 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         tag_name: 1.0
+        name: Release
         files: |
           dist/*.zip
