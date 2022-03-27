@@ -5,9 +5,6 @@ spacing = "normal"
 serifs = "sans"
 no-cv-ss = false
 
-  [buildPlans.iosevka-rs.variants]
-  inherits = "ss04"
-
   [buildPlans.iosevka-rs.ligations]
   inherits = "dlig"
 
@@ -21,9 +18,6 @@ family = "Iosevka RS Slab"
 spacing = "normal"
 serifs = "slab"
 no-cv-ss = false
-
-  [buildPlans.iosevka-rs-slab.variants]
-  inherits = "ss04"
 
   [buildPlans.iosevka-rs-slab.ligations]
   inherits = "dlig"
@@ -41,9 +35,6 @@ serifs = "sans"
 no-cv-ss = false
 no-ligation = true
 
-  [buildPlans.iosevka-rs-terminal.variants]
-  inherits = "ss04"
-
 [buildPlans.iosevka-rs-terminal.widths.normal]
 shape = 600
 menu = 5
@@ -56,9 +47,6 @@ serifs = "slab"
 no-cv-ss = false
 no-ligation = true
 
-  [buildPlans.iosevka-rs-terminal-slab.variants]
-  inherits = "ss04"
-
 [buildPlans.iosevka-rs-terminal-slab.widths.normal]
 shape = 600
 menu = 5
@@ -70,9 +58,6 @@ family = "Iosevka RS QP"
 spacing = "quasi-proportional"
 serifs = "sans"
 no-cv-ss = false
-
-  [buildPlans.iosevka-rs-qp.variants]
-  inherits = "ss04"
 
   [buildPlans.iosevka-rs-qp.ligations]
   inherits = "dlig"
@@ -87,9 +72,6 @@ family = "Iosevka RS QP Slab"
 spacing = "quasi-proportional"
 serifs = "slab"
 no-cv-ss = false
-
-  [buildPlans.iosevka-rs-qp-slab.variants]
-  inherits = "ss04"
 
   [buildPlans.iosevka-rs-qp-slab.ligations]
   inherits = "dlig"
