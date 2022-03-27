@@ -98,3 +98,7 @@ no-cv-ss = false
 shape = 600
 menu = 5
 css = "normal"
+
+#Final collection
+[collectPlans.iosevka-rs-all]
+from = ["iosevka-rs", "iosevka-rs-slab", "iosevka-rs-terminal", "iosevka-rs-terminal-slab", "iosevka-rs-qp", "iosevka-rs-qp-slab"]
