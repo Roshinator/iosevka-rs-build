@@ -10,6 +10,10 @@ on:
         description: 'Iosevka commit to use'     
         required: true
         type: string
+      desc:
+        description: 'Description of release'     
+        required: true
+        type: string
 
 jobs:
   build:
@@ -18,7 +22,7 @@ jobs:
     
     strategy:
       matrix:
-        name: [iosevka-rs, iosevka-rs-slab, iosevka-rs-terminal, iosevka-rs-terminal-slab]
+        name: [iosevka-rs, iosevka-rs-slab, iosevka-rs-terminal, iosevka-rs-terminal-slab, iosevka-rs-qp, iosevka-rs-qp-slab]
     
     steps:
     - uses: actions/checkout@v3
@@ -44,5 +48,6 @@ jobs:
       with:
         tag_name: 1.0
         name: Release
+        body: ${{github.event.inputs.desc}}
         files: |
           dist/*.zip
