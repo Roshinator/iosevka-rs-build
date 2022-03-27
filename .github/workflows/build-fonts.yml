@@ -14,6 +14,10 @@ on:
         description: 'Description of release'     
         required: true
         type: string
+      num:
+        description: 'Release version'     
+        required: true
+        type: string
 
 jobs:
   build:
@@ -43,7 +47,7 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        tag_name: 1.0
+        tag_name: ${{github.event.inputs.num}}
         name: Release
         body: ${{github.event.inputs.desc}}
         files: |
