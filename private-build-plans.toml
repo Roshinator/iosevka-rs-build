@@ -5,6 +5,16 @@ spacing = "normal"
 serifs = "sans"
 no-cv-ss = false
 
+  [buildPlans.iosevka-rs.variants]
+  inherits = "ss04"
+
+    [buildPlans.iosevka-rs.variants.design]
+    i = "serifed"
+    l = "serifed"
+    ampersand = "closed"
+    punctuation-dot = "round"
+    diacritic-dot = "round"
+
   [buildPlans.iosevka-rs.ligations]
   inherits = "dlig"
 
@@ -13,11 +23,34 @@ shape = 600
 menu = 5
 css = "normal"
 
+[buildPlans.iosevka-rs.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.iosevka-rs.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+# Default Slab
 [buildPlans.iosevka-rs-slab]
 family = "Iosevka RS Slab"
 spacing = "normal"
 serifs = "slab"
 no-cv-ss = false
+
+  [buildPlans.iosevka-rs-slab.variants]
+  inherits = "ss04"
+
+    [buildPlans.iosevka-rs-slab.variants.design]
+    i = "serifed"
+    l = "serifed"
+    ampersand = "closed"
+    punctuation-dot = "round"
+    diacritic-dot = "round"
 
   [buildPlans.iosevka-rs-slab.ligations]
   inherits = "dlig"
@@ -27,37 +60,104 @@ shape = 600
 menu = 5
 css = "normal"
 
-# Terminal
-[buildPlans.iosevka-rs-terminal]
-family = "Iosevka RS Terminal"
+[buildPlans.iosevka-rs-slab.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.iosevka-rs-slab.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+#Terminal 
+[buildPlans.iosevka-rs-term]
+family = "Iosevka RS Term"
 spacing = "term"
 serifs = "sans"
 no-cv-ss = false
 no-ligation = true
 
-[buildPlans.iosevka-rs-terminal.widths.normal]
+  [buildPlans.iosevka-rs-term.variants]
+  inherits = "ss04"
+
+    [buildPlans.iosevka-rs-term.variants.design]
+    i = "serifed"
+    l = "serifed"
+    ampersand = "closed"
+    punctuation-dot = "round"
+    diacritic-dot = "round"
+
+[buildPlans.iosevka-rs-term.widths.normal]
 shape = 600
 menu = 5
 css = "normal"
 
-[buildPlans.iosevka-rs-terminal-slab]
-family = "Iosevka RS Terminal Slab"
+[buildPlans.iosevka-rs-term.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.iosevka-rs-term.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+#Terminal Slab
+[buildPlans.iosevka-rs-term-slab]
+family = "Iosevka RS Term Slab"
 spacing = "term"
 serifs = "slab"
 no-cv-ss = false
 no-ligation = true
 
-[buildPlans.iosevka-rs-terminal-slab.widths.normal]
+  [buildPlans.iosevka-rs-term-slab.variants]
+  inherits = "ss04"
+
+    [buildPlans.iosevka-rs-term-slab.variants.design]
+    i = "serifed"
+    l = "serifed"
+    ampersand = "closed"
+    punctuation-dot = "round"
+    diacritic-dot = "round"
+
+[buildPlans.iosevka-rs-term-slab.widths.normal]
 shape = 600
 menu = 5
 css = "normal"
 
-# Quasi-proportional
+[buildPlans.iosevka-rs-term-slab.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.iosevka-rs-term-slab.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+#Quasi-Proportional
 [buildPlans.iosevka-rs-qp]
 family = "Iosevka RS QP"
 spacing = "quasi-proportional"
 serifs = "sans"
 no-cv-ss = false
+
+  [buildPlans.iosevka-rs-qp.variants]
+  inherits = "ss04"
+
+    [buildPlans.iosevka-rs-qp.variants.design]
+    i = "serifed"
+    l = "serifed"
+    ampersand = "closed"
+    punctuation-dot = "round"
+    diacritic-dot = "round"
 
   [buildPlans.iosevka-rs-qp.ligations]
   inherits = "dlig"
@@ -67,11 +167,34 @@ shape = 600
 menu = 5
 css = "normal"
 
+[buildPlans.iosevka-rs-qp.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.iosevka-rs-qp.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+#Quasi-Proportional Slab
 [buildPlans.iosevka-rs-qp-slab]
 family = "Iosevka RS QP Slab"
 spacing = "quasi-proportional"
 serifs = "slab"
 no-cv-ss = false
+
+  [buildPlans.iosevka-rs-qp-slab.variants]
+  inherits = "ss04"
+
+    [buildPlans.iosevka-rs-qp-slab.variants.design]
+    i = "serifed"
+    l = "serifed"
+    ampersand = "closed"
+    punctuation-dot = "round"
+    diacritic-dot = "round"
 
   [buildPlans.iosevka-rs-qp-slab.ligations]
   inherits = "dlig"
@@ -81,6 +204,14 @@ shape = 600
 menu = 5
 css = "normal"
 
-#Final collection
-[collectPlans.iosevka-rs-all]
-from = ["iosevka-rs", "iosevka-rs-slab", "iosevka-rs-terminal", "iosevka-rs-terminal-slab", "iosevka-rs-qp", "iosevka-rs-qp-slab"]
+[buildPlans.iosevka-rs-qp-slab.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.iosevka-rs-qp-slab.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
