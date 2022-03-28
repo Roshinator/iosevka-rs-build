@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        name: [iosevka-rs, iosevka-rs-slab, iosevka-rs-terminal, iosevka-rs-terminal-slab, iosevka-rs-qp, iosevka-rs-qp-slab]
+        name: [iosevka-rs, iosevka-rs-slab, iosevka-rs-term, iosevka-rs-term-slab, iosevka-rs-qp, iosevka-rs-qp-slab]
     steps:
     - uses: actions/checkout@v3
       with:
