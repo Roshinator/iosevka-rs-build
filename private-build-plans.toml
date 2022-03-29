@@ -9,8 +9,7 @@ no-cv-ss = false
   inherits = "ss04"
 
     [buildPlans.iosevka-rs.variants.design]
-    i = "serifed"
-    l = "serifed"
+    capital-q = "crossing"
     ampersand = "closed"
     punctuation-dot = "round"
     diacritic-dot = "round"
@@ -46,8 +45,7 @@ no-cv-ss = false
   inherits = "ss04"
 
     [buildPlans.iosevka-rs-slab.variants.design]
-    i = "serifed"
-    l = "serifed"
+    capital-q = "crossing"
     ampersand = "closed"
     punctuation-dot = "round"
     diacritic-dot = "round"
@@ -84,8 +82,7 @@ no-ligation = true
   inherits = "ss04"
 
     [buildPlans.iosevka-rs-term.variants.design]
-    i = "serifed"
-    l = "serifed"
+    capital-q = "crossing"
     ampersand = "closed"
     punctuation-dot = "round"
     diacritic-dot = "round"
@@ -119,8 +116,7 @@ no-ligation = true
   inherits = "ss04"
 
     [buildPlans.iosevka-rs-term-slab.variants.design]
-    i = "serifed"
-    l = "serifed"
+    capital-q = "crossing"
     ampersand = "closed"
     punctuation-dot = "round"
     diacritic-dot = "round"
@@ -153,8 +149,7 @@ no-cv-ss = false
   inherits = "ss04"
 
     [buildPlans.iosevka-rs-qp.variants.design]
-    i = "serifed"
-    l = "serifed"
+    capital-q = "crossing"
     ampersand = "closed"
     punctuation-dot = "round"
     diacritic-dot = "round"
@@ -190,8 +185,7 @@ no-cv-ss = false
   inherits = "ss04"
 
     [buildPlans.iosevka-rs-qp-slab.variants.design]
-    i = "serifed"
-    l = "serifed"
+    capital-q = "crossing"
     ampersand = "closed"
     punctuation-dot = "round"
     diacritic-dot = "round"
