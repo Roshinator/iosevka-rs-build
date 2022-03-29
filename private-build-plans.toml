@@ -16,6 +16,8 @@ no-cv-ss = false
 
   [buildPlans.iosevka-rs.ligations]
   inherits = "dlig"
+  enables = ["eqeqeq", "exeqeq"]
+  disables = ["eqeq"]
 
 [buildPlans.iosevka-rs.widths.normal]
 shape = 600
@@ -52,6 +54,8 @@ no-cv-ss = false
 
   [buildPlans.iosevka-rs-slab.ligations]
   inherits = "dlig"
+  enables = ["eqeqeq", "exeqeq"]
+  disables = ["eqeq"]
 
 [buildPlans.iosevka-rs-slab.widths.normal]
 shape = 600
@@ -156,6 +160,8 @@ no-cv-ss = false
 
   [buildPlans.iosevka-rs-qp.ligations]
   inherits = "dlig"
+  enables = ["eqeqeq", "exeqeq"]
+  disables = ["eqeq"]
 
 [buildPlans.iosevka-rs-qp.widths.normal]
 shape = 600
@@ -192,6 +198,8 @@ no-cv-ss = false
 
   [buildPlans.iosevka-rs-qp-slab.ligations]
   inherits = "dlig"
+  enables = ["eqeqeq", "exeqeq"]
+  disables = ["eqeq"]
 
 [buildPlans.iosevka-rs-qp-slab.widths.normal]
 shape = 600
