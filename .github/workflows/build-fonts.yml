@@ -40,7 +40,8 @@ jobs:
         cache: 'npm'
     - run: npm install ttfautohint
     - run: npm install
-    - run: npm run build -- contents::${{matrix.name}}
+    - run: npm run build -- ttf::${{matrix.name}}
+    - run: npm run build -- webfont::${{matrix.name}}
     - run: |
         cd dist
         zip -r ${{matrix.name}} ${{matrix.name}}
