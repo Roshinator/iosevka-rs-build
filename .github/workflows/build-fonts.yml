@@ -49,7 +49,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         tag_name: ${{github.event.inputs.num}}
-        name: Release
+        name: Release ${{github.event.inputs.num}}
         body: ${{github.event.inputs.desc}}
         files: |
           dist/*.zip
