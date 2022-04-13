@@ -19,11 +19,6 @@ no-cv-ss = false
   enables = ["eqeqeq", "exeqeq", "llggeq"]
   disables = ["eqeq", "arrow2", "center-ops"]
 
-[buildPlans.iosevka-rs.widths.normal]
-shape = 600
-menu = 5
-css = "normal"
-
 [buildPlans.iosevka-rs.slopes.upright]
 angle = 0
 shape = "upright"
@@ -57,11 +52,6 @@ no-cv-ss = false
   enables = ["eqeqeq", "exeqeq", "llggeq"]
   disables = ["eqeq", "arrow2", "center-ops"]
 
-[buildPlans.iosevka-rs-slab.widths.normal]
-shape = 600
-menu = 5
-css = "normal"
-
 [buildPlans.iosevka-rs-slab.slopes.upright]
 angle = 0
 shape = "upright"
@@ -91,11 +81,6 @@ no-ligation = true
     punctuation-dot = "round"
     diacritic-dot = "round"
 
-[buildPlans.iosevka-rs-term.widths.normal]
-shape = 600
-menu = 5
-css = "normal"
-
 [buildPlans.iosevka-rs-term.slopes.upright]
 angle = 0
 shape = "upright"
@@ -124,11 +109,6 @@ no-ligation = true
     ampersand = "closed"
     punctuation-dot = "round"
     diacritic-dot = "round"
-
-[buildPlans.iosevka-rs-term-slab.widths.normal]
-shape = 600
-menu = 5
-css = "normal"
 
 [buildPlans.iosevka-rs-term-slab.slopes.upright]
 angle = 0
@@ -163,11 +143,6 @@ no-cv-ss = false
   enables = ["eqeqeq", "exeqeq", "llggeq"]
   disables = ["eqeq", "arrow2", "center-ops"]
 
-[buildPlans.iosevka-rs-qp.widths.normal]
-shape = 600
-menu = 5
-css = "normal"
-
 [buildPlans.iosevka-rs-qp.slopes.upright]
 angle = 0
 shape = "upright"
@@ -200,11 +175,6 @@ no-cv-ss = false
   inherits = "dlig"
   enables = ["eqeqeq", "exeqeq", "llggeq"]
   disables = ["eqeq", "arrow2", "center-ops"]
-
-[buildPlans.iosevka-rs-qp-slab.widths.normal]
-shape = 600
-menu = 5
-css = "normal"
 
 [buildPlans.iosevka-rs-qp-slab.slopes.upright]
 angle = 0
