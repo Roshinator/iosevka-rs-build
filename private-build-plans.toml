@@ -20,7 +20,7 @@ no-cv-ss = false
   disables = ["eqeq", "arrow2", "center-ops"]
 
 [buildPlans.iosevka-rs.widths.normal]
-shape = 576
+shape = 550
 menu = 5
 css = "normal"
 
@@ -58,7 +58,7 @@ no-cv-ss = false
   disables = ["eqeq", "arrow2", "center-ops"]
   
 [buildPlans.iosevka-rs-slab.widths.normal]
-shape = 576
+shape = 550
 menu = 5
 css = "normal"
 
@@ -92,7 +92,7 @@ no-ligation = true
     diacritic-dot = "round"
  
 [buildPlans.iosevka-rs-term.widths.normal]
-shape = 576
+shape = 550
 menu = 5
 css = "normal"
 
@@ -126,7 +126,7 @@ no-ligation = true
     diacritic-dot = "round"
     
 [buildPlans.iosevka-rs-term-slab.widths.normal]
-shape = 576
+shape = 550
 menu = 5
 css = "normal"
 
@@ -164,7 +164,7 @@ no-cv-ss = false
   disables = ["eqeq", "arrow2", "center-ops"]
 
 [buildPlans.iosevka-rs-qp.widths.normal]
-shape = 576
+shape = 550
 menu = 5
 css = "normal"
 
@@ -202,7 +202,7 @@ no-cv-ss = false
   disables = ["eqeq", "arrow2", "center-ops"]
   
 [buildPlans.iosevka-rs-qp-slab.widths.normal]
-shape = 576
+shape = 550
 menu = 5
 css = "normal"
 
