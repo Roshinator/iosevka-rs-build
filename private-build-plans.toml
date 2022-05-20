@@ -14,6 +14,8 @@ no-cv-ss = false
     punctuation-dot = "round"
     diacritic-dot = "round"
     brace = "curly"
+    l = "tailed"
+    one = "no-base"
 
   [buildPlans.iosevka-rs.ligations]
   inherits = "dlig"
@@ -53,6 +55,8 @@ no-cv-ss = false
     punctuation-dot = "round"
     diacritic-dot = "round"
     brace = "curly"
+    l = "tailed"
+    one = "no-base"
 
   [buildPlans.iosevka-rs-term.ligations]
   inherits = "dlig"
@@ -93,6 +97,8 @@ no-ligation = true
     punctuation-dot = "round"
     diacritic-dot = "round"
     brace = "curly"
+    l = "tailed"
+    one = "no-base"
  
 [buildPlans.iosevka-rs-fixed.widths.normal]
 shape = 576
@@ -127,6 +133,8 @@ no-cv-ss = false
     punctuation-dot = "round"
     diacritic-dot = "round"
     brace = "curly"
+    l = "tailed"
+    one = "no-base"
 
   [buildPlans.iosevka-rs-aile.ligations]
   inherits = "dlig"
