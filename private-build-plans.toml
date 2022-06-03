@@ -43,117 +43,17 @@ css = "italic"
 [buildPlans.iosevka-rs-term]
 family = "Iosevka RS Term"
 spacing = "term"
-serifs = "sans"
-no-cv-ss = false
-
-  [buildPlans.iosevka-rs-term.variants]
-  inherits = "ss04"
-
-    [buildPlans.iosevka-rs-term.variants.design]
-    capital-q = "crossing"
-    ampersand = "closed"
-    punctuation-dot = "round"
-    diacritic-dot = "round"
-    brace = "curly"
-    l = "tailed"
-    one = "no-base"
-
-  [buildPlans.iosevka-rs-term.ligations]
-  inherits = "dlig"
-  enables = ["eqeqeq", "exeqeq", "llggeq"]
-  disables = ["eqeq", "arrow2", "center-ops"]
-
-[buildPlans.iosevka-rs-term.widths.normal]
-shape = 576
-menu = 5
-css = "normal"
-
-[buildPlans.iosevka-rs-term.slopes.upright]
-angle = 0
-shape = "upright"
-menu = "upright"
-css = "normal"
-
-[buildPlans.iosevka-rs-term.slopes.italic]
-angle = 9.4
-shape = "italic"
-menu = "italic"
-css = "italic"
+inherits = "iosevka-rs"
 
 #Fixed 
 [buildPlans.iosevka-rs-fixed]
 family = "Iosevka RS Fixed"
 spacing = "fixed"
-serifs = "sans"
-no-cv-ss = false
 no-ligation = true
-
-  [buildPlans.iosevka-rs-fixed.variants]
-  inherits = "ss04"
-
-    [buildPlans.iosevka-rs-fixed.variants.design]
-    capital-q = "crossing"
-    ampersand = "closed"
-    punctuation-dot = "round"
-    diacritic-dot = "round"
-    brace = "curly"
-    l = "tailed"
-    one = "no-base"
- 
-[buildPlans.iosevka-rs-fixed.widths.normal]
-shape = 576
-menu = 5
-css = "normal"
-
-[buildPlans.iosevka-rs-fixed.slopes.upright]
-angle = 0
-shape = "upright"
-menu = "upright"
-css = "normal"
-
-[buildPlans.iosevka-rs-fixed.slopes.italic]
-angle = 9.4
-shape = "italic"
-menu = "italic"
-css = "italic"
+inherits = "iosevka-rs"
 
 #Quasi-Proportional
 [buildPlans.iosevka-rs-aile]
 family = "Iosevka RS Aile"
 spacing = "quasi-proportional"
-serifs = "sans"
-no-cv-ss = false
-
-  [buildPlans.iosevka-rs-aile.variants]
-  inherits = "ss04"
-
-    [buildPlans.iosevka-rs-aile.variants.design]
-    capital-q = "crossing"
-    ampersand = "closed"
-    punctuation-dot = "round"
-    diacritic-dot = "round"
-    brace = "curly"
-    l = "tailed"
-    one = "no-base"
-
-  [buildPlans.iosevka-rs-aile.ligations]
-  inherits = "dlig"
-  enables = ["eqeqeq", "exeqeq", "llggeq"]
-  disables = ["eqeq", "arrow2", "center-ops"]
-
-[buildPlans.iosevka-rs-aile.widths.normal]
-shape = 576
-menu = 5
-css = "normal"
-
-[buildPlans.iosevka-rs-aile.slopes.upright]
-angle = 0
-shape = "upright"
-menu = "upright"
-css = "normal"
-
-[buildPlans.iosevka-rs-aile.slopes.italic]
-angle = 9.4
-shape = "italic"
-menu = "italic"
-css = "italic"
+inherits = "iosevka-rs"
